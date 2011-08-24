@@ -16,6 +16,7 @@
 		485C29341404C8890084B127 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C29321404C8890084B127 /* MainWindow.xib */; };
 		485C29371404C88A0084B127 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 485C29361404C88A0084B127 /* RootViewController.m */; };
 		485C293A1404C88A0084B127 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C29381404C88A0084B127 /* RootViewController.xib */; };
+		485C29431404C9200084B127 /* JOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 485C29421404C9200084B127 /* JOImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,18 @@
 		485C29201404C8890084B127 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		485C29221404C8890084B127 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		485C29241404C8890084B127 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		485C29281404C8890084B127 /* JOKit-Info.plist */ = {isa = PBXFileReference; path = "JOKit-Info.plist"; sourceTree = "<group>"; };
+		485C29281404C8890084B127 /* JOKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JOKit-Info.plist"; sourceTree = "<group>"; };
 		485C292A1404C8890084B127 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		485C292C1404C8890084B127 /* JOKit-Prefix.pch */ = {isa = PBXFileReference; path = "JOKit-Prefix.pch"; sourceTree = "<group>"; };
+		485C292C1404C8890084B127 /* JOKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JOKit-Prefix.pch"; sourceTree = "<group>"; };
 		485C292D1404C8890084B127 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		485C292F1404C8890084B127 /* JOKitAppDelegate.h */ = {isa = PBXFileReference; path = JOKitAppDelegate.h; sourceTree = "<group>"; };
+		485C292F1404C8890084B127 /* JOKitAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOKitAppDelegate.h; sourceTree = "<group>"; };
 		485C29301404C8890084B127 /* JOKitAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOKitAppDelegate.m; sourceTree = "<group>"; };
 		485C29331404C8890084B127 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		485C29351404C8890084B127 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		485C29351404C8890084B127 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		485C29361404C88A0084B127 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		485C29391404C88A0084B127 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		485C29411404C9200084B127 /* JOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOImageView.h; sourceTree = "<group>"; };
+		485C29421404C9200084B127 /* JOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 		485C29261404C8890084B127 /* JOKit */ = {
 			isa = PBXGroup;
 			children = (
+				485C29401404C9200084B127 /* Classes */,
 				485C292F1404C8890084B127 /* JOKitAppDelegate.h */,
 				485C29301404C8890084B127 /* JOKitAppDelegate.m */,
 				485C29321404C8890084B127 /* MainWindow.xib */,
@@ -99,6 +103,15 @@
 				485C292D1404C8890084B127 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		485C29401404C9200084B127 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				485C29411404C9200084B127 /* JOImageView.h */,
+				485C29421404C9200084B127 /* JOImageView.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +177,7 @@
 				485C292E1404C8890084B127 /* main.m in Sources */,
 				485C29311404C8890084B127 /* JOKitAppDelegate.m in Sources */,
 				485C29371404C88A0084B127 /* RootViewController.m in Sources */,
+				485C29431404C9200084B127 /* JOImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
