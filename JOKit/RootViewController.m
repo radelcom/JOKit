@@ -3,16 +3,18 @@
 //  JOKit
 //
 //  Created by Jeffrey Oloresisimo on 11-08-23.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 radelcom. All rights reserved.
 //
 
 #import "RootViewController.h"
+#import "JOImageView.h"
 
 @implementation RootViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    array = [[NSArray arrayWithObjects:@"JOImageView", nil] retain];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -51,7 +53,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [array count];
 }
 
 // Customize the appearance of table view cells.
@@ -65,6 +67,8 @@
     }
 
     // Configure the cell.
+    cell.textLabel.text = [array objectAtIndex:indexPath.row];
+    
     return cell;
 }
 
@@ -111,13 +115,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-    // ...
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-	*/
+    UIViewController* viewController = [[UIViewController alloc] init];    
+    [self.navigationController pushViewController:viewController animated:YES];
+    
+    JOImageView* imageView = [[JOImageView alloc] initWithFrame:viewController.view.frame];
+    [imageView loadURL:@"http://www.6smarketing.com/wp-content/uploads/2010/07/1_google_logo.jpg"];
+    [viewController.view addSubview:imageView];
+    
+    [viewController release];
 }
 
 - (void)didReceiveMemoryWarning
@@ -138,6 +143,7 @@
 
 - (void)dealloc
 {
+    [array release];
     [super dealloc];
 }
 
