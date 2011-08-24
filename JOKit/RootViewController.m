@@ -121,6 +121,7 @@
     JOImageView* imageView = [[JOImageView alloc] initWithFrame:viewController.view.frame];
     [imageView loadURL:@"http://www.6smarketing.com/wp-content/uploads/2010/07/1_google_logo.jpg"];
     [viewController.view addSubview:imageView];
+    [imageView release];
     
     [viewController release];
 }

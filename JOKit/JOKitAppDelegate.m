@@ -7,6 +7,7 @@
 //
 
 #import "JOKitAppDelegate.h"
+#import "RootViewController.h"
 
 @implementation JOKitAppDelegate
 
@@ -19,7 +20,10 @@
 {
     // Override point for customization after application launch.
     // Add the navigation controller's view to the window and display.
-    self.window.rootViewController = self.navigationController;
+    //self.window.rootViewController = self.navigationController;
+    RootViewController *rootViewController = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
+    [self.navigationController pushViewController:rootViewController animated:YES];
+    [self.window addSubview:self.navigationController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }

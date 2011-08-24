@@ -121,7 +121,6 @@
 #pragma mark -
 #pragma mark NSURLConnectionDelegate
 - (void)connection:(NSURLConnection*)connection didReceiveResponse:(NSURLResponse*)response {
-    NSLog(@"%@",response.suggestedFilename);
 	if (imageName == nil && [self verifyFilename:response.suggestedFilename]) {
 		[activityIndicator stopAnimating];
         [connection cancel];
