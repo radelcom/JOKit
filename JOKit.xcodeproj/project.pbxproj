@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		485C29211404C8890084B127 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485C29201404C8890084B127 /* UIKit.framework */; };
+		485C29231404C8890084B127 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485C29221404C8890084B127 /* Foundation.framework */; };
+		485C29251404C8890084B127 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485C29241404C8890084B127 /* CoreGraphics.framework */; };
+		485C292B1404C8890084B127 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 485C29291404C8890084B127 /* InfoPlist.strings */; };
+		485C292E1404C8890084B127 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 485C292D1404C8890084B127 /* main.m */; };
+		485C29311404C8890084B127 /* JOKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 485C29301404C8890084B127 /* JOKitAppDelegate.m */; };
+		485C29341404C8890084B127 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C29321404C8890084B127 /* MainWindow.xib */; };
+		485C29371404C88A0084B127 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 485C29361404C88A0084B127 /* RootViewController.m */; };
+		485C293A1404C88A0084B127 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C29381404C88A0084B127 /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		485C291C1404C8890084B127 /* JOKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JOKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		485C29201404C8890084B127 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		485C29221404C8890084B127 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		485C29241404C8890084B127 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		485C29281404C8890084B127 /* JOKit-Info.plist */ = {isa = PBXFileReference; path = "JOKit-Info.plist"; sourceTree = "<group>"; };
+		485C292A1404C8890084B127 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		485C292C1404C8890084B127 /* JOKit-Prefix.pch */ = {isa = PBXFileReference; path = "JOKit-Prefix.pch"; sourceTree = "<group>"; };
+		485C292D1404C8890084B127 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		485C292F1404C8890084B127 /* JOKitAppDelegate.h */ = {isa = PBXFileReference; path = JOKitAppDelegate.h; sourceTree = "<group>"; };
+		485C29301404C8890084B127 /* JOKitAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOKitAppDelegate.m; sourceTree = "<group>"; };
+		485C29331404C8890084B127 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		485C29351404C8890084B127 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		485C29361404C88A0084B127 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		485C29391404C88A0084B127 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		485C29191404C8890084B127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485C29211404C8890084B127 /* UIKit.framework in Frameworks */,
+				485C29231404C8890084B127 /* Foundation.framework in Frameworks */,
+				485C29251404C8890084B127 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		485C29111404C8870084B127 = {
+			isa = PBXGroup;
+			children = (
+				485C29261404C8890084B127 /* JOKit */,
+				485C291F1404C8890084B127 /* Frameworks */,
+				485C291D1404C8890084B127 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		485C291D1404C8890084B127 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				485C291C1404C8890084B127 /* JOKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		485C291F1404C8890084B127 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				485C29201404C8890084B127 /* UIKit.framework */,
+				485C29221404C8890084B127 /* Foundation.framework */,
+				485C29241404C8890084B127 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		485C29261404C8890084B127 /* JOKit */ = {
+			isa = PBXGroup;
+			children = (
+				485C292F1404C8890084B127 /* JOKitAppDelegate.h */,
+				485C29301404C8890084B127 /* JOKitAppDelegate.m */,
+				485C29321404C8890084B127 /* MainWindow.xib */,
+				485C29351404C8890084B127 /* RootViewController.h */,
+				485C29361404C88A0084B127 /* RootViewController.m */,
+				485C29381404C88A0084B127 /* RootViewController.xib */,
+				485C29271404C8890084B127 /* Supporting Files */,
+			);
+			path = JOKit;
+			sourceTree = "<group>";
+		};
+		485C29271404C8890084B127 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				485C29281404C8890084B127 /* JOKit-Info.plist */,
+				485C29291404C8890084B127 /* InfoPlist.strings */,
+				485C292C1404C8890084B127 /* JOKit-Prefix.pch */,
+				485C292D1404C8890084B127 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		485C291B1404C8890084B127 /* JOKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485C293D1404C88A0084B127 /* Build configuration list for PBXNativeTarget "JOKit" */;
+			buildPhases = (
+				485C29181404C8890084B127 /* Sources */,
+				485C29191404C8890084B127 /* Frameworks */,
+				485C291A1404C8890084B127 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JOKit;
+			productName = JOKit;
+			productReference = 485C291C1404C8890084B127 /* JOKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		485C29131404C8870084B127 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 485C29161404C8870084B127 /* Build configuration list for PBXProject "JOKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 485C29111404C8870084B127;
+			productRefGroup = 485C291D1404C8890084B127 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				485C291B1404C8890084B127 /* JOKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		485C291A1404C8890084B127 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485C292B1404C8890084B127 /* InfoPlist.strings in Resources */,
+				485C29341404C8890084B127 /* MainWindow.xib in Resources */,
+				485C293A1404C88A0084B127 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		485C29181404C8890084B127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485C292E1404C8890084B127 /* main.m in Sources */,
+				485C29311404C8890084B127 /* JOKitAppDelegate.m in Sources */,
+				485C29371404C88A0084B127 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		485C29291404C8890084B127 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				485C292A1404C8890084B127 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		485C29321404C8890084B127 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				485C29331404C8890084B127 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		485C29381404C88A0084B127 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				485C29391404C88A0084B127 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		485C293B1404C88A0084B127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		485C293C1404C88A0084B127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		485C293E1404C88A0084B127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JOKit/JOKit-Prefix.pch";
+				INFOPLIST_FILE = "JOKit/JOKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		485C293F1404C88A0084B127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JOKit/JOKit-Prefix.pch";
+				INFOPLIST_FILE = "JOKit/JOKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		485C29161404C8870084B127 /* Build configuration list for PBXProject "JOKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485C293B1404C88A0084B127 /* Debug */,
+				485C293C1404C88A0084B127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		485C293D1404C88A0084B127 /* Build configuration list for PBXNativeTarget "JOKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485C293E1404C88A0084B127 /* Debug */,
+				485C293F1404C88A0084B127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 485C29131404C8870084B127 /* Project object */;
+}
